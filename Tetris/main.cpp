@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Core.h";
+#include "Core.h"
 
 using namespace std;
 

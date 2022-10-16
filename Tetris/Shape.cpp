@@ -1,9 +1,12 @@
 #include "Shape.h"
+#include "Core.h"
 
 CShape::CShape() {
+	m_iWidthCount = 0;
+
 	for (int i = 0; i < 4; i++) {
 		for (int j = 0; j < 4; j++) {
-			m_cShape[i][j] = 0;
+			m_cShape[i][j] = '1';
 		}
 	}
 }
@@ -20,9 +23,10 @@ bool CShape::Init() {
 }
 
 void CShape::Render() {
-	m_iWidthCount = 0;
 
 	for (int i = 0; i < 4; ++i) {
+		CCore::GetInst()->SetConsolePos(m_tPos.x, m_tPos.y - (3 - i) );
+
 		for (int j = 0; j < 4; ++j) {
 			if (m_cShape[i][j] == '0') {
 				cout << "бс";
@@ -37,7 +41,9 @@ void CShape::Render() {
 }
 
 void CShape::MoveDown() {
-	if (m_tPos.y == (STAGE_HEIGHT - 1) ) return;
+	if (m_tPos.y == (STAGE_HEIGHT - 1)) {
+		return;
+	}
 
 	++m_tPos.y;
 }

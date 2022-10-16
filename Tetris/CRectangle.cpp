@@ -19,9 +19,12 @@ bool CRectangle::Init() {
 	m_cShape[3][0] = '0';
 	m_cShape[3][1] = '0';
 
-	m_tPivot.x = 1;
-	m_tPivot.y = 3;
+	// m_tPivot.x = 1;
+	// m_tPivot.y = 3;
 	m_iWidthCount = 2;
 
-	return false;
+	m_tPos.x = 4;
+	m_tPos.y = 0;
+
+	return true;
 }

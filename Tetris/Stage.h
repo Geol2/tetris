@@ -15,5 +15,5 @@ public:
 private:
 	friend class CStageManager;
 
-	char m_Stage[STAGE_HEIGHT][STAGE_WIDTH];
+	char m_Stage[STAGE_HEIGHT][STAGE_WIDTH] = {0, };
 };

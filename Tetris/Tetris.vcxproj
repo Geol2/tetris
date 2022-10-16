@@ -142,6 +142,8 @@
     <ClInclude Include="CLine.h" />
     <ClInclude Include="Core.h" />
     <ClInclude Include="CRectangle.h" />
+    <ClInclude Include="CShapeManager.h" />
+    <ClInclude Include="Flags.h" />
     <ClInclude Include="Shape.h" />
     <ClInclude Include="Stage.h" />
     <ClInclude Include="StageManager.h" />
@@ -152,6 +154,7 @@
     <ClCompile Include="CLine.cpp" />
     <ClCompile Include="Core.cpp" />
     <ClCompile Include="CRectangle.cpp" />
+    <ClCompile Include="CShapeManager.cpp" />
     <ClCompile Include="Shape.cpp" />
     <ClCompile Include="Stage.cpp" />
     <ClCompile Include="StageManager.cpp" />

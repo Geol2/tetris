@@ -6,10 +6,12 @@ class CShape
 {
 
 protected:
+	
 	char		m_cShape[4][4];
 	POSITION	m_tPos;
 	POSITION	m_tPivot;
-	int			m_iWidthCount;
+	int			m_iWidthCount = 0;
+
 public:
 	CShape();
 	virtual ~CShape();

@@ -9,6 +9,8 @@ private:
 	~CCore();
 
 	static CCore* m_pInst;
+	
+	HANDLE		m_hConsole;
 
 public:
 	static CCore* GetInst() {
@@ -25,5 +27,7 @@ public:
 
 	bool Init();
 	void Run();
+	void SetConsolePos(SHORT x, SHORT y);
+
 };
 

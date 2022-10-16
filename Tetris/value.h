@@ -1,11 +1,14 @@
 #pragma once
 
 #include <iostream>
+#include <Windows.h>
 #include <time.h>
+#include <list>
 
 using namespace std;
 
 #include "MACRO.h"
+#include "Flags.h"
 
 #define STAGE_WIDTH		  10
 #define STAGE_HEIGHT	  15
